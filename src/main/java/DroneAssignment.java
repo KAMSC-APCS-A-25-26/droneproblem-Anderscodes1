@@ -27,7 +27,7 @@ public class DroneAssignment {
         System.out.println("After taking 3 photos: " + (photos+=3));
         System.out.println("After descending to half: " + (displayAltitude/=2));
         System.out.println("Photos: " + photos);
-        System.out.println("Storage slots used " + photos + " out of 4");
+        System.out.println("Storage slots used: " + photos + " out of 4");
 
         // TODO: Part 1 - Casting
         // Cast altitude (double) to int called displayAltitude

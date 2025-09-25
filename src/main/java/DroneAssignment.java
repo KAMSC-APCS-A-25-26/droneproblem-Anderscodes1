@@ -5,14 +5,30 @@ public class DroneAssignment {
         double altitude = 150.7;
         double battery = 87.3;
         int photos = 0;
-        
+
+
         System.out.println("=== Drone Flight Simulation ===");
         System.out.println("Initial Status:");
         System.out.println("Altitude: " + altitude + " meters");
         System.out.println("Battery: " + battery + "%");
         System.out.println("Photos: " + photos);
         System.out.println();
-        
+
+        // casting
+        int displayAltitude = (int) altitude;
+        int batteryRounded = (int) battery;
+        System.out.println("Display Altitude: " + displayAltitude);
+        System.out.println("Battery Rounded: " + batteryRounded);
+        System.out.println();
+
+        // compound assignment operators
+        System.out.println("After climbing 20m: " + (displayAltitude+=20));
+        System.out.println("After battery drain: " + (batteryRounded-=(batteryRounded*0.17)));
+        System.out.println("After taking 3 photos: " + (photos+=3));
+        System.out.println("After descending to half: " + (displayAltitude/=2));
+        System.out.println("Photos: " + photos);
+        System.out.println("Storage slots used " + photos + " out of 4");
+
         // TODO: Part 1 - Casting
         // Cast altitude (double) to int called displayAltitude
         // Cast battery (double) to int called batteryRounded

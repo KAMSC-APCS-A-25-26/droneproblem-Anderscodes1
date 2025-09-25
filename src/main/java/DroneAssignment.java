@@ -23,7 +23,7 @@ public class DroneAssignment {
 
         // compound assignment operators
         System.out.println("After climbing 20m: " + (displayAltitude+=20));
-        System.out.println("After battery drain: " + (batteryRounded-=(batteryRounded*0.17)));
+        System.out.println("After battery drain: " + (batteryRounded-15));
         System.out.println("After taking 3 photos: " + (photos+=3));
         System.out.println("After descending to half: " + (displayAltitude/=2));
         System.out.println("Photos: " + photos);
